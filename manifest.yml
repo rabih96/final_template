@@ -1,11 +1,11 @@
   applications:
-  - name: onlinecourse
+  - name: final-template
     routes:
-      - route: host.domain
+      - route: final-template.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: onlinecourse-nginx
+  - name: final-template-nginx
     routes:
-      - route: host.domain/static
+      - route: final-template.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
